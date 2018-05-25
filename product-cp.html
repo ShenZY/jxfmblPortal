@@ -428,11 +428,11 @@
 						"transition": "none",
 						"-webkit-transition": "none"
 					});
-					$popup_bg.css({
-						"background-image": "url(" + img_src + ")",
-						"background-size": "cover",
-						"transform": "rotate(180deg)"
-					});
+					// $popup_bg.css({
+					// 	"background-image": "url(" + img_src + ")",
+					// 	"background-size": "cover",
+					// 	"transform": "rotate(180deg)"
+					// });
 					$img.css("visibility", "hidden");
 					setTimeout(function() {
 						$popup.css({
@@ -448,6 +448,7 @@
 							$popup_bg.css({
 								"background-image": "url(" + img_src + ")",
 								"background-size": "cover",
+								"transform": "rotate(270deg)"
 							});
 						}, 700)
 						// var detailSwiper = new Swiper('.show-list .swiper-container', {
