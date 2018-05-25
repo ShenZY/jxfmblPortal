@@ -309,7 +309,7 @@
 				</div>
 			</section>
 		</div>
-		<!-- <div class="show-list">
+		<div class="show-list">
 			<div class="img-bg"></div>
 			<div class="close-pop"><img src="statics/images/close.png" /></div>
 			<div class="sbtips">
@@ -319,7 +319,7 @@
 			<div class="swiper-container">
 
 			</div>
-		</div> -->
+		</div>
 		<footer>
 			<img src="statics/images/footer-bg.png" alt="" class="img" />
 			<div class="foot-nav">
@@ -448,46 +448,47 @@
 								"background-image": "url(" + img_src + ")"
 							});
 						}, 700)
-						// var detailSwiper = new Swiper('.show-list .swiper-container', {
-						// 	speed: 1000,
-						// 	effect: 'fade',
-						// 	fade: {
-						// 		crossFade: true,
-						// 	},
-						// 	preventClicks: false,
-						// 	// 如果需要分页器
-						// 	pagination: '.swiper-pagination',
-						// 	paginationType: 'fraction',
-						// 	// 如果需要前进后退按钮
-						// 	nextButton: '.swiper-button-next',
-						// 	prevButton: '.swiper-button-prev',
-						// })
-						// setTimeout(function() {
-						// 	$(".show-list .sbtips").fadeOut("slow")
-						// }, 4000)
+						var detailSwiper = new Swiper('.show-list .swiper-container', {
+							speed: 1000,
+							effect: 'fade',
+							fade: {
+								crossFade: true,
+							},
+							preventClicks: false,
+							// 如果需要分页器
+							pagination: '.swiper-pagination',
+							paginationType: 'fraction',
+							// 如果需要前进后退按钮
+							nextButton: '.swiper-button-next',
+							prevButton: '.swiper-button-prev',
+						})
+						setTimeout(function() {
+							$(".show-list .sbtips").fadeOut("slow")
+						}, 4000)
 					}, 1);
 				}
 			})
+
 		})
-		// $(".show-list").on("dblclick", '.imagesBox', function() {
-		// 	$popup.css({
-		// 		"width": img_W,
-		// 		"height": img_H,
-		// 		"top": img_T,
-		// 		"left": img_L
-		// 	});
-		// 	$popup.removeClass("show")
-		// 	$(".show-list .sbtips").fadeIn("slow");
-		// 	setTimeout(function() {
-		// 		$popup_bg.css({
-		// 			"background-image": "url(" + img_src + ")"
-		// 		});
-		// 	}, 700)
-		// 	setTimeout(function() {
-		// 		canScroll_product = true;
-		// 		$img.css("visibility", "visible");
-		// 	}, 1400)
-		// })
+		$(".show-list").on("dblclick", '.imagesBox', function() {
+			$popup.css({
+				"width": img_W,
+				"height": img_H,
+				"top": img_T,
+				"left": img_L
+			});
+			$popup.removeClass("show")
+			$(".show-list .sbtips").fadeIn("slow");
+			setTimeout(function() {
+				$popup_bg.css({
+					"background-image": "url(" + img_src + ")"
+				});
+			}, 700)
+			setTimeout(function() {
+				canScroll_product = true;
+				$img.css("visibility", "visible");
+			}, 1400)
+		})
 		$(".close-pop").click(function() {
 			$popup.css({
 				"width": img_W,
