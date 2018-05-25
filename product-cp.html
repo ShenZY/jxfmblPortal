@@ -431,6 +431,7 @@
 					$popup_bg.css({
 						"background-image": "url(" + img_src + ")",
 						"background-size": "cover",
+						"transform": "rotate(100deg)"
 					});
 					$img.css("visibility", "hidden");
 					setTimeout(function() {
@@ -439,7 +440,7 @@
 							"height": "100%",
 							"top": 0,
 							"left": 0,
-							//"transition": "all 1.4s cubic-bezier(.77,0,.175,1) 0s",
+							"transition": "all 1.4s cubic-bezier(.77,0,.175,1) 0s",
 							"-webkit-transition": "all 1.4s cubic-bezier(.77,0,.175,1) 0s;"
 						});
 						$popup.addClass("show");
@@ -447,16 +448,9 @@
 							$popup_bg.css({
 								"background-image": "url(" + img_src + ")",
 								"background-size": "cover",
+								"transform": "rotate(100deg)"
 							});
 						}, 700)
-						$popup_bg.rotate({
-							angle: 180, 
-							// animateTo: 180, 
-							// callback: rotation2,
-							// easing: function(x,t,b,c,d){
-							// 	return c*(t/d)+b;
-							// }
-						});
 						// var detailSwiper = new Swiper('.show-list .swiper-container', {
 						// 	speed: 1000,
 						// 	effect: 'fade',
