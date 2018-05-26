@@ -45,6 +45,8 @@ var xlx = {
 						move2();
 						clearInterval(timer)
 					}
+					alert("x:" + x);
+					alert("y:" + y);
 					var transform = 'translateX(' + x + 'px) translateY(' + y + 'px)'
 					$(".tracker").css({
 						transform: transform
@@ -73,6 +75,8 @@ var xlx = {
 						move3()
 						clearInterval(timer)
 					}
+					alert("move2 x:" + x);
+					alert("move2 y:" + y);
 					var transform = 'translateX(' + x + 'px) translateY(' + y + 'px)'
 					$(".tracker").css({
 						transform: transform
@@ -101,6 +105,8 @@ var xlx = {
 						move4()
 						clearInterval(timer)
 					}
+					alert("move3 x:" + x);
+					alert("move3 y:" + y);
 					var transform = 'translateX(' + x + 'px) translateY(' + y + 'px)'
 					$(".tracker").css({
 						transform: transform
@@ -129,6 +135,8 @@ var xlx = {
 						move1()
 						clearInterval(timer)
 					}
+					alert("move4 x:" + x);
+					alert("move4 y:" + y);
 					var transform = 'translateX(' + x + 'px) translateY(' + y + 'px)'
 					$(".tracker").css({
 						transform: transform
