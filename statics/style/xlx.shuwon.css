@@ -813,7 +813,7 @@ body{ font-size: 1.6rem;}
 .brand-line .brand-material .carousel .my-btn:hover{background-color: #c7af82;}
 .brand-line .brand-material .carousel .prev-btn{left: auto;right: 143px; background-image: url("../images/arrow-left.png")/*tpa=http://r060.mobanvip.com/statics/images/arrow-left.png*/;}
 .brand-line .brand-material .carousel .next-btn{right: 90px;background-image: url("../images/arrow-right.png")/*tpa=http://r060.mobanvip.com/statics/images/arrow-right.png*/;}
-.brand-line .brand-material .carousel .pic-wrap:after{position: absolute;content: "";width: 100%;height: 100%;z-index: 0;background: rgba(0, 0, 0, .2);top: 0;left: ;}
+.brand-line .brand-material .carousel .pic-wrap:after{position: absolute;content: "";width: 100%;height: 100%;z-index: 0;background: rgba(0, 0, 0, .2);top: 0;left: 0;}
 
 /*
  * brand-info
